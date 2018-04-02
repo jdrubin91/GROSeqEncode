@@ -3,8 +3,17 @@ import some_script
 import config
 
 def run():
-	print("hello world")
-	some_script.execute()
+	beds = config.beds
+	bam1 = config.bam1
+	bam2 = config.bam2
+	print("Executing GRO-Seq ENCODE script...")
+	bed = bedtools_intersect(beds,outdir)
+	
+	
+	
+	
+	
+	
 
 def parse_tab_delimited_file(file1):
 	with open(file1) as F:
