@@ -3,9 +3,9 @@ import some_script
 import config
 
 def run():
-	beds = config.beds
-	bam1 = config.bam1
-	bam2 = config.bam2
+	beds = config.BEDS
+	bam1 = config.BAM1
+	bam2 = config.BAM2
 	print("Executing GRO-Seq ENCODE script...")
 	bed = bedtools_intersect(beds,outdir)
 	
